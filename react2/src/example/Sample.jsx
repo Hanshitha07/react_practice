@@ -1,38 +1,31 @@
 import React from 'react'
 
-const Mango = () =>{
+const Mango = () => {
     return (
-        <h2>Mangoes are sweet</h2>
+        <div className="fruit-card mango-card">
+            <h2 className="fruit-title">🥭 Mangoes are sweet</h2>
+        </div>
     )
 }
 
 const Grapes = () => {
     return (
-        <h2>Grapes are juicy</h2>
+        <div className="fruit-card grapes-card">
+            <h2 className="fruit-title">🍇 Grapes are juicy</h2>
+        </div>
     )
 }
+
 function Sample() {
   return (
-    <div>Sample
-        <Grapes />
-        <Mango />
-        
+    <div className="sample-container">
+        <h1 className="sample-title">🍓 Fruit Collection</h1>
+        <div className="fruits-grid">
+            <Grapes />
+            <Mango />
+        </div>
     </div>
-        
   )
 }
 
-export default Sample ;
-
-// src/Sample.js
-// import React from 'react';
-
-// function Sample() {
-//   return (
-//     <div>
-//       <h2>This is the Sample component</h2>
-//     </div>
-//   );
-// }
-
-// export default Sample;
+export default Sample;
